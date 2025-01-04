@@ -1,0 +1,711 @@
+module.exports = {
+  path: '/data/calendar/calendarimage',
+  code: `
+  $createCanvas[650;1270]
+  $loadImage[base;path;./assets/images/calendar/calendar.jpeg]
+  $drawImage[base;0;0;650;1270]
+  $opacity[30]
+  $color[#1700fb]
+  $ignore[sunday]
+  $if[$getVar[$getQuery[userid]-sun00]!=none;
+  $drawRect[53;45;82;$math[30*$getVar[$getQuery[userid]-suntime00]]];]
+  $if[$getVar[$getQuery[userid]-sun01]!=none;
+$drawRect[53;75;82;$math[30*$getVar[$getQuery[userid]-suntime01]]];]
+$if[$getVar[$getQuery[userid]-sun02]!=none;
+$drawRect[53;105;82;$math[30*$getVar[$getQuery[userid]-suntime02]]];]
+$if[$getVar[$getQuery[userid]-sun03]!=none;
+  $drawRect[53;135;82;$math[30*$getVar[$getQuery[userid]-suntime03]]];]
+  $if[$getVar[$getQuery[userid]-sun04]!=none;
+$drawRect[53;165;82;$math[30*$getVar[$getQuery[userid]-suntime04]]];]
+$if[$getVar[$getQuery[userid]-sun05]!=none;
+  $drawRect[53;195;82;$math[30*$getVar[$getQuery[userid]-suntime05]]];]
+$if[$getVar[$getQuery[userid]-sun06]!=none;
+  $drawRect[53;225;82;$math[55*$getVar[$getQuery[userid]-suntime06]]];]
+  $if[$getVar[$getQuery[userid]-sun07]!=none;
+  $drawRect[53;280;82;$math[55*$getVar[$getQuery[userid]-suntime07]]];]
+  $if[$getVar[$getQuery[userid]-sun08]!=none;
+$drawRect[53;335;82;$math[55*$getVar[$getQuery[userid]-suntime08]]];]
+$if[$getVar[$getQuery[userid]-sun09]!=none;
+  $drawRect[53;390;82;$math[60*$getVar[$getQuery[userid]-suntime09]]];]
+$if[$getVar[$getQuery[userid]-sun10]!=none;
+  $drawRect[53;450;82;$math[60*$getVar[$getQuery[userid]-suntime10]]];]
+  $if[$getVar[$getQuery[userid]-sun11]!=none;
+$drawRect[53;510;82;$math[60*$getVar[$getQuery[userid]-suntime11]]];]
+$if[$getVar[$getQuery[userid]-sun12]!=none;
+$drawRect[53;570;82;$math[60*$getVar[$getQuery[userid]-suntime12]]];]
+$if[$getVar[$getQuery[userid]-sun13]!=none;
+$drawRect[53;630;82;$math[60*$getVar[$getQuery[userid]-suntime13]]];]
+$if[$getVar[$getQuery[userid]-sun14]!=none;
+$drawRect[53;690;82;$math[55*$getVar[$getQuery[userid]-suntime14]]];]
+$if[$getVar[$getQuery[userid]-sun15]!=none;
+$drawRect[53;745;82;$math[55*$getVar[$getQuery[userid]-suntime15]]];]
+$if[$getVar[$getQuery[userid]-sun16]!=none;
+$drawRect[53;800;82;$math[60*$getVar[$getQuery[userid]-suntime16]]];]
+$if[$getVar[$getQuery[userid]-sun17]!=none;
+$drawRect[53;860;82;$math[60*$getVar[$getQuery[userid]-suntime17]]];]
+$if[$getVar[$getQuery[userid]-sun18]!=none;
+$drawRect[53;920;82;$math[55*$getVar[$getQuery[userid]-suntime18]]];]
+$if[$getVar[$getQuery[userid]-sun19]!=none;
+  $drawRect[53;975;82;$math[60*$getVar[$getQuery[userid]-suntime19]]];]
+  $if[$getVar[$getQuery[userid]-sun20]!=none;
+  $drawRect[53;1035;82;$math[60*$getVar[$getQuery[userid]-suntime20]]];]
+  $if[$getVar[$getQuery[userid]-sun21]!=none;
+  $drawRect[53;1095;82;$math[55*$getVar[$getQuery[userid]-suntime21]]];]
+  $if[$getVar[$getQuery[userid]-sun22]!=none;
+  $drawRect[53;1150;82;$math[60*$getVar[$getQuery[userid]-suntime22]]];]
+  $if[$getVar[$getQuery[userid]-sun23]!=none;
+  $drawRect[53;1210;82;$math[55*$getVar[$getQuery[userid]-suntime23]]];]
+  
+
+$ignore[monday]
+  $if[$getVar[$getQuery[userid]-mon00]!=none;
+  $drawRect[135;45;82;$math[30*$getVar[$getQuery[userid]-montime00]]];]
+  $if[$getVar[$getQuery[userid]-mon01]!=none;
+$drawRect[135;75;82;$math[30*$getVar[$getQuery[userid]-montime01]]];]
+$if[$getVar[$getQuery[userid]-mon02]!=none;
+$drawRect[135;105;82;$math[30*$getVar[$getQuery[userid]-montime02]]];]
+$if[$getVar[$getQuery[userid]-mon03]!=none;
+  $drawRect[135;135;82;$math[30*$getVar[$getQuery[userid]-montime03]]];]
+  $if[$getVar[$getQuery[userid]-mon04]!=none;
+$drawRect[135;165;82;$math[30*$getVar[$getQuery[userid]-montime04]]];]
+$if[$getVar[$getQuery[userid]-mon05]!=none;
+  $drawRect[135;195;82;$math[30*$getVar[$getQuery[userid]-montime05]]];]
+$if[$getVar[$getQuery[userid]-mon06]!=none;
+  $drawRect[135;225;82;$math[55*$getVar[$getQuery[userid]-montime06]]];]
+  $if[$getVar[$getQuery[userid]-mon07]!=none;
+  $drawRect[135;280;82;$math[55*$getVar[$getQuery[userid]-montime07]]];]
+  $if[$getVar[$getQuery[userid]-mon08]!=none;
+$drawRect[135;335;82;$math[55*$getVar[$getQuery[userid]-montime08]]];]
+$if[$getVar[$getQuery[userid]-mon09]!=none;
+  $drawRect[135;390;82;$math[60*$getVar[$getQuery[userid]-montime09]]];]
+$if[$getVar[$getQuery[userid]-mon10]!=none;
+  $drawRect[135;450;82;$math[60*$getVar[$getQuery[userid]-montime10]]];]
+  $if[$getVar[$getQuery[userid]-mon11]!=none;
+$drawRect[135;510;82;$math[60*$getVar[$getQuery[userid]-montime11]]];]
+$if[$getVar[$getQuery[userid]-mon12]!=none;
+$drawRect[135;570;82;$math[60*$getVar[$getQuery[userid]-montime12]]];]
+$if[$getVar[$getQuery[userid]-mon13]!=none;
+$drawRect[135;630;82;$math[60*$getVar[$getQuery[userid]-montime13]]];]
+$if[$getVar[$getQuery[userid]-mon14]!=none;
+$drawRect[135;690;82;$math[55*$getVar[$getQuery[userid]-montime14]]];]
+$if[$getVar[$getQuery[userid]-mon15]!=none;
+$drawRect[135;745;82;$math[55*$getVar[$getQuery[userid]-montime15]]];]
+$if[$getVar[$getQuery[userid]-mon16]!=none;
+$drawRect[135;800;82;$math[60*$getVar[$getQuery[userid]-montime16]]];]
+$if[$getVar[$getQuery[userid]-mon17]!=none;
+$drawRect[135;860;82;$math[60*$getVar[$getQuery[userid]-montime17]]];]
+$if[$getVar[$getQuery[userid]-mon18]!=none;
+$drawRect[135;920;82;$math[55*$getVar[$getQuery[userid]-montime18]]];]
+$if[$getVar[$getQuery[userid]-mon19]!=none;
+  $drawRect[135;975;82;$math[60*$getVar[$getQuery[userid]-montime19]]];]
+  $if[$getVar[$getQuery[userid]-mon20]!=none;
+  $drawRect[135;1035;82;$math[60*$getVar[$getQuery[userid]-montime20]]];]
+  $if[$getVar[$getQuery[userid]-mon21]!=none;
+  $drawRect[135;1095;82;$math[55*$getVar[$getQuery[userid]-montime21]]];]
+  $if[$getVar[$getQuery[userid]-mon22]!=none;
+  $drawRect[135;1150;82;$math[60*$getVar[$getQuery[userid]-montime22]]];]
+  $if[$getVar[$getQuery[userid]-mon23]!=none;
+  $drawRect[135;1210;82;$math[55*$getVar[$getQuery[userid]-montime23]]];]
+  
+
+  
+$ignore[tuesday]
+  $if[$getVar[$getQuery[userid]-tues00]!=none;
+  $drawRect[219;45;82;$math[30*$getVar[$getQuery[userid]-tuestime00]]];]
+  $if[$getVar[$getQuery[userid]-tues01]!=none;
+$drawRect[219;75;82;$math[30*$getVar[$getQuery[userid]-tuestime01]]];]
+$if[$getVar[$getQuery[userid]-tues02]!=none;
+$drawRect[219;105;82;$math[30*$getVar[$getQuery[userid]-tuestime02]]];]
+$if[$getVar[$getQuery[userid]-tues03]!=none;
+  $drawRect[219;135;82;$math[30*$getVar[$getQuery[userid]-tuestime03]]];]
+  $if[$getVar[$getQuery[userid]-tues04]!=none;
+$drawRect[219;165;82;$math[30*$getVar[$getQuery[userid]-tuestime04]]];]
+$if[$getVar[$getQuery[userid]-tues05]!=none;
+  $drawRect[219;195;82;$math[30*$getVar[$getQuery[userid]-tuestime05]]];]
+$if[$getVar[$getQuery[userid]-tues06]!=none;
+  $drawRect[219;225;82;$math[55*$getVar[$getQuery[userid]-tuestime06]]];]
+  $if[$getVar[$getQuery[userid]-tues07]!=none;
+  $drawRect[219;280;82;$math[55*$getVar[$getQuery[userid]-tuestime07]]];]
+  $if[$getVar[$getQuery[userid]-tues08]!=none;
+$drawRect[219;335;82;$math[55*$getVar[$getQuery[userid]-tuestime08]]];]
+$if[$getVar[$getQuery[userid]-tues09]!=none;
+  $drawRect[219;390;82;$math[60*$getVar[$getQuery[userid]-tuestime09]]];]
+$if[$getVar[$getQuery[userid]-tues10]!=none;
+  $drawRect[219;450;82;$math[60*$getVar[$getQuery[userid]-tuestime10]]];]
+  $if[$getVar[$getQuery[userid]-tues11]!=none;
+$drawRect[219;510;82;$math[60*$getVar[$getQuery[userid]-tuestime11]]];]
+$if[$getVar[$getQuery[userid]-tues12]!=none;
+$drawRect[219;570;82;$math[60*$getVar[$getQuery[userid]-tuestime12]]];]
+$if[$getVar[$getQuery[userid]-tues13]!=none;
+$drawRect[219;630;82;$math[60*$getVar[$getQuery[userid]-tuestime13]]];]
+$if[$getVar[$getQuery[userid]-tues14]!=none;
+$drawRect[219;690;82;$math[55*$getVar[$getQuery[userid]-tuestime14]]];]
+$if[$getVar[$getQuery[userid]-tues15]!=none;
+$drawRect[219;745;82;$math[55*$getVar[$getQuery[userid]-tuestime15]]];]
+$if[$getVar[$getQuery[userid]-tues16]!=none;
+$drawRect[219;800;82;$math[60*$getVar[$getQuery[userid]-tuestime16]]];]
+$if[$getVar[$getQuery[userid]-tues17]!=none;
+$drawRect[219;860;82;$math[60*$getVar[$getQuery[userid]-tuestime17]]];]
+$if[$getVar[$getQuery[userid]-tues18]!=none;
+$drawRect[219;920;82;$math[55*$getVar[$getQuery[userid]-tuestime18]]];]
+$if[$getVar[$getQuery[userid]-tues19]!=none;
+  $drawRect[219;975;82;$math[60*$getVar[$getQuery[userid]-tuestime19]]];]
+  $if[$getVar[$getQuery[userid]-tues20]!=none;
+  $drawRect[219;1035;82;$math[60*$getVar[$getQuery[userid]-tuestime20]]];]
+  $if[$getVar[$getQuery[userid]-tues21]!=none;
+  $drawRect[219;1095;82;$math[55*$getVar[$getQuery[userid]-tuestime21]]];]
+  $if[$getVar[$getQuery[userid]-tues22]!=none;
+  $drawRect[219;1150;82;$math[60*$getVar[$getQuery[userid]-tuestime22]]];]
+  $if[$getVar[$getQuery[userid]-tues23]!=none;
+  $drawRect[219;1210;82;$math[55*$getVar[$getQuery[userid]-tuestime23]]];]
+  
+
+
+$ignore[wednesday]
+    $if[$getVar[$getQuery[userid]-wed00]!=none;
+  $drawRect[302;45;82;$math[30*$getVar[$getQuery[userid]-wedtime00]]];]
+  $if[$getVar[$getQuery[userid]-wed01]!=none;
+$drawRect[302;75;82;$math[30*$getVar[$getQuery[userid]-wedtime01]]];]
+$if[$getVar[$getQuery[userid]-wed02]!=none;
+$drawRect[302;105;82;$math[30*$getVar[$getQuery[userid]-wedtime02]]];]
+$if[$getVar[$getQuery[userid]-wed03]!=none;
+  $drawRect[302;135;82;$math[30*$getVar[$getQuery[userid]-wedtime03]]];]
+  $if[$getVar[$getQuery[userid]-wed04]!=none;
+$drawRect[302;165;82;$math[30*$getVar[$getQuery[userid]-wedtime04]]];]
+$if[$getVar[$getQuery[userid]-wed05]!=none;
+  $drawRect[302;195;82;$math[30*$getVar[$getQuery[userid]-wedtime05]]];]
+$if[$getVar[$getQuery[userid]-wed06]!=none;
+  $drawRect[302;225;82;$math[55*$getVar[$getQuery[userid]-wedtime06]]];]
+  $if[$getVar[$getQuery[userid]-wed07]!=none;
+  $drawRect[302;280;82;$math[55*$getVar[$getQuery[userid]-wedtime07]]];]
+  $if[$getVar[$getQuery[userid]-wed08]!=none;
+$drawRect[302;335;82;$math[55*$getVar[$getQuery[userid]-wedtime08]]];]
+$if[$getVar[$getQuery[userid]-wed09]!=none;
+  $drawRect[302;390;82;$math[60*$getVar[$getQuery[userid]-wedtime09]]];]
+$if[$getVar[$getQuery[userid]-wed10]!=none;
+  $drawRect[302;450;82;$math[60*$getVar[$getQuery[userid]-wedtime10]]];]
+  $if[$getVar[$getQuery[userid]-wed11]!=none;
+$drawRect[302;510;82;$math[60*$getVar[$getQuery[userid]-wedtime11]]];]
+$if[$getVar[$getQuery[userid]-wed12]!=none;
+$drawRect[302;570;82;$math[60*$getVar[$getQuery[userid]-wedtime12]]];]
+$if[$getVar[$getQuery[userid]-wed13]!=none;
+$drawRect[302;630;82;$math[60*$getVar[$getQuery[userid]-wedtime13]]];]
+$if[$getVar[$getQuery[userid]-wed14]!=none;
+$drawRect[302;690;82;$math[55*$getVar[$getQuery[userid]-wedtime14]]];]
+$if[$getVar[$getQuery[userid]-wed15]!=none;
+$drawRect[302;745;82;$math[55*$getVar[$getQuery[userid]-wedtime15]]];]
+$if[$getVar[$getQuery[userid]-wed16]!=none;
+$drawRect[302;800;82;$math[60*$getVar[$getQuery[userid]-wedtime16]]];]
+$if[$getVar[$getQuery[userid]-wed17]!=none;
+$drawRect[302;860;82;$math[60*$getVar[$getQuery[userid]-wedtime17]]];]
+$if[$getVar[$getQuery[userid]-wed18]!=none;
+$drawRect[302;920;82;$math[55*$getVar[$getQuery[userid]-wedtime18]]];]
+$if[$getVar[$getQuery[userid]-wed19]!=none;
+  $drawRect[302;975;82;$math[60*$getVar[$getQuery[userid]-wedtime19]]];]
+  $if[$getVar[$getQuery[userid]-wed20]!=none;
+  $drawRect[302;1035;82;$math[60*$getVar[$getQuery[userid]-wedtime20]]];]
+  $if[$getVar[$getQuery[userid]-wed21]!=none;
+  $drawRect[302;1095;82;$math[55*$getVar[$getQuery[userid]-wedtime21]]];]
+  $if[$getVar[$getQuery[userid]-wed22]!=none;
+  $drawRect[302;1150;82;$math[60*$getVar[$getQuery[userid]-wedtime22]]];]
+  $if[$getVar[$getQuery[userid]-wed23]!=none;
+  $drawRect[302;1210;82;$math[55*$getVar[$getQuery[userid]-wedtime23]]];]
+  
+
+
+$ignore[thursday]
+    $if[$getVar[$getQuery[userid]-thurs00]!=none;
+  $drawRect[386;45;82;$math[30*$getVar[$getQuery[userid]-thurstime00]]];]
+  $if[$getVar[$getQuery[userid]-thurs01]!=none;
+$drawRect[386;75;82;$math[30*$getVar[$getQuery[userid]-thurstime01]]];]
+$if[$getVar[$getQuery[userid]-thurs02]!=none;
+$drawRect[386;105;82;$math[30*$getVar[$getQuery[userid]-thurstime02]]];]
+$if[$getVar[$getQuery[userid]-thurs03]!=none;
+  $drawRect[386;135;82;$math[30*$getVar[$getQuery[userid]-thurstime03]]];]
+  $if[$getVar[$getQuery[userid]-thurs04]!=none;
+$drawRect[386;165;82;$math[30*$getVar[$getQuery[userid]-thurstime04]]];]
+$if[$getVar[$getQuery[userid]-thurs05]!=none;
+  $drawRect[386;195;82;$math[30*$getVar[$getQuery[userid]-thurstime05]]];]
+$if[$getVar[$getQuery[userid]-thurs06]!=none;
+  $drawRect[386;225;82;$math[55*$getVar[$getQuery[userid]-thurstime06]]];]
+  $if[$getVar[$getQuery[userid]-thurs07]!=none;
+  $drawRect[386;280;82;$math[55*$getVar[$getQuery[userid]-thurstime07]]];]
+  $if[$getVar[$getQuery[userid]-thurs08]!=none;
+$drawRect[386;335;82;$math[55*$getVar[$getQuery[userid]-thurstime08]]];]
+$if[$getVar[$getQuery[userid]-thurs09]!=none;
+  $drawRect[386;390;82;$math[60*$getVar[$getQuery[userid]-thurstime09]]];]
+$if[$getVar[$getQuery[userid]-thurs10]!=none;
+  $drawRect[386;450;82;$math[60*$getVar[$getQuery[userid]-thurstime10]]];]
+  $if[$getVar[$getQuery[userid]-thurs11]!=none;
+$drawRect[386;510;82;$math[60*$getVar[$getQuery[userid]-thurstime11]]];]
+$if[$getVar[$getQuery[userid]-thurs12]!=none;
+$drawRect[386;570;82;$math[60*$getVar[$getQuery[userid]-thurstime12]]];]
+$if[$getVar[$getQuery[userid]-thurs13]!=none;
+$drawRect[386;630;82;$math[60*$getVar[$getQuery[userid]-thurstime13]]];]
+$if[$getVar[$getQuery[userid]-thurs14]!=none;
+$drawRect[386;690;82;$math[55*$getVar[$getQuery[userid]-thurstime14]]];]
+$if[$getVar[$getQuery[userid]-thurs15]!=none;
+$drawRect[386;745;82;$math[55*$getVar[$getQuery[userid]-thurstime15]]];]
+$if[$getVar[$getQuery[userid]-thurs16]!=none;
+$drawRect[386;800;82;$math[60*$getVar[$getQuery[userid]-thurstime16]]];]
+$if[$getVar[$getQuery[userid]-thurs17]!=none;
+$drawRect[386;860;82;$math[60*$getVar[$getQuery[userid]-thurstime17]]];]
+$if[$getVar[$getQuery[userid]-thurs18]!=none;
+$drawRect[386;920;82;$math[55*$getVar[$getQuery[userid]-thurstime18]]];]
+$if[$getVar[$getQuery[userid]-thurs19]!=none;
+  $drawRect[386;975;82;$math[60*$getVar[$getQuery[userid]-thurstime19]]];]
+  $if[$getVar[$getQuery[userid]-thurs20]!=none;
+  $drawRect[386;1035;82;$math[60*$getVar[$getQuery[userid]-thurstime20]]];]
+  $if[$getVar[$getQuery[userid]-thurs21]!=none;
+  $drawRect[386;1095;82;$math[55*$getVar[$getQuery[userid]-thurstime21]]];]
+  $if[$getVar[$getQuery[userid]-thurs22]!=none;
+  $drawRect[386;1150;82;$math[60*$getVar[$getQuery[userid]-thurstime22]]];]
+  $if[$getVar[$getQuery[userid]-thurs23]!=none;
+  $drawRect[386;1210;82;$math[55*$getVar[$getQuery[userid]-thurstime23]]];]
+
+
+$ignore[friday]
+  $if[$getVar[$getQuery[userid]-fri00]!=none;
+  $drawRect[471;45;82;$math[30*$getVar[$getQuery[userid]-fritime00]]];]
+  $if[$getVar[$getQuery[userid]-fri01]!=none;
+$drawRect[471;75;82;$math[30*$getVar[$getQuery[userid]-fritime01]]];]
+$if[$getVar[$getQuery[userid]-fri02]!=none;
+$drawRect[471;105;82;$math[30*$getVar[$getQuery[userid]-fritime02]]];]
+$if[$getVar[$getQuery[userid]-fri03]!=none;
+  $drawRect[471;135;82;$math[30*$getVar[$getQuery[userid]-fritime03]]];]
+  $if[$getVar[$getQuery[userid]-fri04]!=none;
+$drawRect[471;165;82;$math[30*$getVar[$getQuery[userid]-fritime04]]];]
+$if[$getVar[$getQuery[userid]-fri05]!=none;
+  $drawRect[471;195;82;$math[30*$getVar[$getQuery[userid]-fritime05]]];]
+$if[$getVar[$getQuery[userid]-fri06]!=none;
+  $drawRect[471;225;82;$math[55*$getVar[$getQuery[userid]-fritime06]]];]
+  $if[$getVar[$getQuery[userid]-fri07]!=none;
+  $drawRect[471;280;82;$math[55*$getVar[$getQuery[userid]-fritime07]]];]
+  $if[$getVar[$getQuery[userid]-fri08]!=none;
+$drawRect[471;335;82;$math[55*$getVar[$getQuery[userid]-fritime08]]];]
+$if[$getVar[$getQuery[userid]-fri09]!=none;
+  $drawRect[471;390;82;$math[60*$getVar[$getQuery[userid]-fritime09]]];]
+$if[$getVar[$getQuery[userid]-fri10]!=none;
+  $drawRect[471;450;82;$math[60*$getVar[$getQuery[userid]-fritime10]]];]
+  $if[$getVar[$getQuery[userid]-fri11]!=none;
+$drawRect[471;510;82;$math[60*$getVar[$getQuery[userid]-fritime11]]];]
+$if[$getVar[$getQuery[userid]-fri12]!=none;
+$drawRect[471;570;82;$math[60*$getVar[$getQuery[userid]-fritime12]]];]
+$if[$getVar[$getQuery[userid]-fri13]!=none;
+$drawRect[471;630;82;$math[60*$getVar[$getQuery[userid]-fritime13]]];]
+$if[$getVar[$getQuery[userid]-fri14]!=none;
+$drawRect[471;690;82;$math[55*$getVar[$getQuery[userid]-fritime14]]];]
+$if[$getVar[$getQuery[userid]-fri15]!=none;
+$drawRect[471;745;82;$math[55*$getVar[$getQuery[userid]-fritime15]]];]
+$if[$getVar[$getQuery[userid]-fri16]!=none;
+$drawRect[471;800;82;$math[60*$getVar[$getQuery[userid]-fritime16]]];]
+$if[$getVar[$getQuery[userid]-fri17]!=none;
+$drawRect[471;860;82;$math[60*$getVar[$getQuery[userid]-fritime17]]];]
+$if[$getVar[$getQuery[userid]-fri18]!=none;
+$drawRect[471;920;82;$math[55*$getVar[$getQuery[userid]-fritime18]]];]
+$if[$getVar[$getQuery[userid]-fri19]!=none;
+  $drawRect[471;975;82;$math[60*$getVar[$getQuery[userid]-fritime19]]];]
+  $if[$getVar[$getQuery[userid]-fri20]!=none;
+  $drawRect[471;1035;82;$math[60*$getVar[$getQuery[userid]-fritime20]]];]
+  $if[$getVar[$getQuery[userid]-fri21]!=none;
+  $drawRect[471;1095;82;$math[55*$getVar[$getQuery[userid]-fritime21]]];]
+  $if[$getVar[$getQuery[userid]-fri22]!=none;
+  $drawRect[471;1150;82;$math[60*$getVar[$getQuery[userid]-fritime22]]];]
+  $if[$getVar[$getQuery[userid]-fri23]!=none;
+  $drawRect[471;1210;82;$math[55*$getVar[$getQuery[userid]-fritime23]]];]
+  
+
+$ignore[saturday]
+  $if[$getVar[$getQuery[userid]-sat00]!=none;
+  $drawRect[555;45;82;$math[30*$getVar[$getQuery[userid]-sattime00]]];]
+  $if[$getVar[$getQuery[userid]-sat01]!=none;
+$drawRect[555;75;82;$math[30*$getVar[$getQuery[userid]-sattime01]]];]
+$if[$getVar[$getQuery[userid]-sat02]!=none;
+$drawRect[555;105;82;$math[30*$getVar[$getQuery[userid]-sattime02]]];]
+$if[$getVar[$getQuery[userid]-sat03]!=none;
+  $drawRect[555;135;82;$math[30*$getVar[$getQuery[userid]-sattime03]]];]
+  $if[$getVar[$getQuery[userid]-sat04]!=none;
+$drawRect[555;165;82;$math[30*$getVar[$getQuery[userid]-sattime04]]];]
+$if[$getVar[$getQuery[userid]-sat05]!=none;
+  $drawRect[555;195;82;$math[30*$getVar[$getQuery[userid]-sattime05]]];]
+$if[$getVar[$getQuery[userid]-sat06]!=none;
+  $drawRect[555;225;82;$math[55*$getVar[$getQuery[userid]-sattime06]]];]
+  $if[$getVar[$getQuery[userid]-sat07]!=none;
+  $drawRect[555;280;82;$math[55*$getVar[$getQuery[userid]-sattime07]]];]
+  $if[$getVar[$getQuery[userid]-sat08]!=none;
+$drawRect[555;335;82;$math[55*$getVar[$getQuery[userid]-sattime08]]];]
+$if[$getVar[$getQuery[userid]-sat09]!=none;
+  $drawRect[555;390;82;$math[60*$getVar[$getQuery[userid]-sattime09]]];]
+$if[$getVar[$getQuery[userid]-sat10]!=none;
+  $drawRect[555;450;82;$math[60*$getVar[$getQuery[userid]-sattime10]]];]
+  $if[$getVar[$getQuery[userid]-sat11]!=none;
+$drawRect[555;510;82;$math[60*$getVar[$getQuery[userid]-sattime11]]];]
+$if[$getVar[$getQuery[userid]-sat12]!=none;
+$drawRect[555;570;82;$math[60*$getVar[$getQuery[userid]-sattime12]]];]
+$if[$getVar[$getQuery[userid]-sat13]!=none;
+$drawRect[555;630;82;$math[60*$getVar[$getQuery[userid]-sattime13]]];]
+$if[$getVar[$getQuery[userid]-sat14]!=none;
+$drawRect[555;690;82;$math[55*$getVar[$getQuery[userid]-sattime14]]];]
+$if[$getVar[$getQuery[userid]-sat15]!=none;
+$drawRect[555;745;82;$math[55*$getVar[$getQuery[userid]-sattime15]]];]
+$if[$getVar[$getQuery[userid]-sat16]!=none;
+$drawRect[555;800;82;$math[60*$getVar[$getQuery[userid]-sattime16]]];]
+$if[$getVar[$getQuery[userid]-sat17]!=none;
+$drawRect[555;860;82;$math[60*$getVar[$getQuery[userid]-sattime17]]];]
+$if[$getVar[$getQuery[userid]-sat18]!=none;
+$drawRect[555;920;82;$math[55*$getVar[$getQuery[userid]-sattime18]]];]
+$if[$getVar[$getQuery[userid]-sat19]!=none;
+  $drawRect[555;975;82;$math[60*$getVar[$getQuery[userid]-sattime19]]];]
+  $if[$getVar[$getQuery[userid]-sat20]!=none;
+  $drawRect[555;1035;82;$math[60*$getVar[$getQuery[userid]-sattime20]]];]
+  $if[$getVar[$getQuery[userid]-sat21]!=none;
+  $drawRect[555;1095;82;$math[55*$getVar[$getQuery[userid]-sattime21]]];]
+  $if[$getVar[$getQuery[userid]-sat22]!=none;
+  $drawRect[555;1150;82;$math[60*$getVar[$getQuery[userid]-sattime22]]];]
+  $if[$getVar[$getQuery[userid]-sat23]!=none;
+  $drawRect[555;1210;82;$math[55*$getVar[$getQuery[userid]-sattime23]]];]
+  $opacity[100]
+  $color[#000000]
+  $font[16;Arial]
+    $if[$getVar[$getQuery[userid]-sun00]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun00];53;45;82;70];]
+  $if[$getVar[$getQuery[userid]-sun01]!=none;
+$drawText[$getVar[$getQuery[userid]-sun01];53;75;82;70];]
+$if[$getVar[$getQuery[userid]-sun02]!=none;
+$drawText[$getVar[$getQuery[userid]-sun02];53;105;82;70];]
+$if[$getVar[$getQuery[userid]-sun03]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun03];53;135;82;70];]
+  $if[$getVar[$getQuery[userid]-sun04]!=none;
+$drawText[$getVar[$getQuery[userid]-sun04];53;165;82;70];]
+$if[$getVar[$getQuery[userid]-sun05]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun05];53;195;82;70];]
+$if[$getVar[$getQuery[userid]-sun06]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun06];53;225;82;70];]
+  $if[$getVar[$getQuery[userid]-sun07]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun07];53;280;82;70];]
+  $if[$getVar[$getQuery[userid]-sun08]!=none;
+$drawText[$getVar[$getQuery[userid]-sun08];53;335;82;70];]
+$if[$getVar[$getQuery[userid]-sun09]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun09];53;390;82;70];]
+$if[$getVar[$getQuery[userid]-sun10]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun10];53;450;82;70];]
+  $if[$getVar[$getQuery[userid]-sun11]!=none;
+$drawText[$getVar[$getQuery[userid]-sun11];53;510;82;70];]
+$if[$getVar[$getQuery[userid]-sun12]!=none;
+$drawText[$getVar[$getQuery[userid]-sun12];53;570;82;70];]
+$if[$getVar[$getQuery[userid]-sun13]!=none;
+$drawText[$getVar[$getQuery[userid]-sun13];53;630;82;70];]
+$if[$getVar[$getQuery[userid]-sun14]!=none;
+$drawText[$getVar[$getQuery[userid]-sun14];53;690;82;70];]
+$if[$getVar[$getQuery[userid]-sun15]!=none;
+$drawText[$getVar[$getQuery[userid]-sun15];53;745;82;70];]
+$if[$getVar[$getQuery[userid]-sun16]!=none;
+$drawText[$getVar[$getQuery[userid]-sun16];53;800;82;70];]
+$if[$getVar[$getQuery[userid]-sun17]!=none;
+$drawText[$getVar[$getQuery[userid]-sun17];53;860;82;70];]
+$if[$getVar[$getQuery[userid]-sun18]!=none;
+$drawText[$getVar[$getQuery[userid]-sun18];53;920;82;7];]
+$if[$getVar[$getQuery[userid]-sun19]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun19];53;975;82;70];]
+  $if[$getVar[$getQuery[userid]-sun20]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun20];53;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-sun21]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun21];53;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-sun22]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun22];53;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-sun23]!=none;
+  $drawText[$getVar[$getQuery[userid]-sun23];53;1210;82;70];]
+  $if[$getVar[$getQuery[userid]-mon00]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon00];135;45;82;70];]
+  $if[$getVar[$getQuery[userid]-mon01]!=none;
+$drawText[$getVar[$getQuery[userid]-mon01];135;75;82;70];]
+$if[$getVar[$getQuery[userid]-mon02]!=none;
+$drawText[$getVar[$getQuery[userid]-mon02];135;105;82;70];]
+$if[$getVar[$getQuery[userid]-mon03]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon03];135;135;82;70];]
+  $if[$getVar[$getQuery[userid]-mon04]!=none;
+$drawText[$getVar[$getQuery[userid]-mon04];135;165;82;70];]
+$if[$getVar[$getQuery[userid]-mon05]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon05];135;195;82;70];]
+$if[$getVar[$getQuery[userid]-mon06]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon06];135;225;82;70];]
+  $if[$getVar[$getQuery[userid]-mon07]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon07];135;280;82;70];]
+  $if[$getVar[$getQuery[userid]-mon08]!=none;
+$drawText[$getVar[$getQuery[userid]-mon08];135;335;82;70];]
+$if[$getVar[$getQuery[userid]-mon09]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon09];135;390;82;70];]
+$if[$getVar[$getQuery[userid]-mon10]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon10];135;450;82;70];]
+  $if[$getVar[$getQuery[userid]-mon11]!=none;
+$drawText[$getVar[$getQuery[userid]-mon11];135;510;82;70];]
+$if[$getVar[$getQuery[userid]-mon12]!=none;
+$drawText[$getVar[$getQuery[userid]-mon12];135;570;82;70];]
+$if[$getVar[$getQuery[userid]-mon13]!=none;
+$drawText[$getVar[$getQuery[userid]-mon13];135;630;82;70];]
+$if[$getVar[$getQuery[userid]-mon14]!=none;
+$drawText[$getVar[$getQuery[userid]-mon14];135;690;82;70];]
+$if[$getVar[$getQuery[userid]-mon15]!=none;
+$drawText[$getVar[$getQuery[userid]-mon15];135;745;82;70];]
+$if[$getVar[$getQuery[userid]-mon16]!=none;
+$drawText[$getVar[$getQuery[userid]-mon16];135;800;82;70];]
+$if[$getVar[$getQuery[userid]-mon17]!=none;
+$drawText[$getVar[$getQuery[userid]-mon17];135;860;82;70];]
+$if[$getVar[$getQuery[userid]-mon18]!=none;
+$drawText[$getVar[$getQuery[userid]-mon18];135;920;82;7];]
+$if[$getVar[$getQuery[userid]-mon19]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon19];135;975;82;70];]
+  $if[$getVar[$getQuery[userid]-mon20]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon20];135;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-mon21]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon21];135;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-mon22]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon22];135;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-mon23]!=none;
+  $drawText[$getVar[$getQuery[userid]-mon23];135;1210;82;70];]
+$if[$getVar[$getQuery[userid]-tues00]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues00];219;45;82;70];]
+  $if[$getVar[$getQuery[userid]-tues01]!=none;
+$drawText[$getVar[$getQuery[userid]-tues01];219;75;82;70];]
+$if[$getVar[$getQuery[userid]-tues02]!=none;
+$drawText[$getVar[$getQuery[userid]-tues02];219;105;82;70];]
+$if[$getVar[$getQuery[userid]-tues03]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues03];219;135;82;70];]
+  $if[$getVar[$getQuery[userid]-tues04]!=none;
+$drawText[$getVar[$getQuery[userid]-tues04];219;165;82;70];]
+$if[$getVar[$getQuery[userid]-tues05]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues05];219;195;82;70];]
+$if[$getVar[$getQuery[userid]-tues06]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues06];219;225;82;70];]
+  $if[$getVar[$getQuery[userid]-tues07]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues07];219;280;82;70];]
+  $if[$getVar[$getQuery[userid]-tues08]!=none;
+$drawText[$getVar[$getQuery[userid]-tues08];219;335;82;70];]
+$if[$getVar[$getQuery[userid]-tues09]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues09];219;390;82;70];]
+$if[$getVar[$getQuery[userid]-tues10]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues10];219;450;82;70];]
+  $if[$getVar[$getQuery[userid]-tues11]!=none;
+$drawText[$getVar[$getQuery[userid]-tues11];219;510;82;70];]
+$if[$getVar[$getQuery[userid]-tues12]!=none;
+$drawText[$getVar[$getQuery[userid]-tues12];219;570;82;70];]
+$if[$getVar[$getQuery[userid]-tues13]!=none;
+$drawText[$getVar[$getQuery[userid]-tues13];219;630;82;70];]
+$if[$getVar[$getQuery[userid]-tues14]!=none;
+$drawText[$getVar[$getQuery[userid]-tues14];219;690;82;70];]
+$if[$getVar[$getQuery[userid]-tues15]!=none;
+$drawText[$getVar[$getQuery[userid]-tues15];219;745;82;70];]
+$if[$getVar[$getQuery[userid]-tues16]!=none;
+$drawText[$getVar[$getQuery[userid]-tues16];219;800;82;70];]
+$if[$getVar[$getQuery[userid]-tues17]!=none;
+$drawText[$getVar[$getQuery[userid]-tues17];219;860;82;70];]
+$if[$getVar[$getQuery[userid]-tues18]!=none;
+$drawText[$getVar[$getQuery[userid]-tues18];219;920;82;7];]
+$if[$getVar[$getQuery[userid]-tues19]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues19];219;975;82;70];]
+  $if[$getVar[$getQuery[userid]-tues20]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues20];219;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-tues21]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues21];219;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-tues22]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues22];219;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-tues23]!=none;
+  $drawText[$getVar[$getQuery[userid]-tues23];219;1210;82;70];]
+$if[$getVar[$getQuery[userid]-wed00]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed00];302;45;82;70];]
+  $if[$getVar[$getQuery[userid]-wed01]!=none;
+$drawText[$getVar[$getQuery[userid]-wed01];302;75;82;70];]
+$if[$getVar[$getQuery[userid]-wed02]!=none;
+$drawText[$getVar[$getQuery[userid]-wed02];302;105;82;70];]
+$if[$getVar[$getQuery[userid]-wed03]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed03];302;135;82;70];]
+  $if[$getVar[$getQuery[userid]-wed04]!=none;
+$drawText[$getVar[$getQuery[userid]-wed04];302;165;82;70];]
+$if[$getVar[$getQuery[userid]-wed05]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed05];302;195;82;70];]
+$if[$getVar[$getQuery[userid]-wed06]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed06];302;225;82;70];]
+  $if[$getVar[$getQuery[userid]-wed07]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed07];302;280;82;70];]
+  $if[$getVar[$getQuery[userid]-wed08]!=none;
+$drawText[$getVar[$getQuery[userid]-wed08];302;335;82;70];]
+$if[$getVar[$getQuery[userid]-wed09]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed09];302;390;82;70];]
+$if[$getVar[$getQuery[userid]-wed10]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed10];302;450;82;70];]
+  $if[$getVar[$getQuery[userid]-wed11]!=none;
+$drawText[$getVar[$getQuery[userid]-wed11];302;510;82;70];]
+$if[$getVar[$getQuery[userid]-wed12]!=none;
+$drawText[$getVar[$getQuery[userid]-wed12];302;570;82;70];]
+$if[$getVar[$getQuery[userid]-wed13]!=none;
+$drawText[$getVar[$getQuery[userid]-wed13];302;630;82;70];]
+$if[$getVar[$getQuery[userid]-wed14]!=none;
+$drawText[$getVar[$getQuery[userid]-wed14];302;690;82;70];]
+$if[$getVar[$getQuery[userid]-wed15]!=none;
+$drawText[$getVar[$getQuery[userid]-wed15];302;745;82;70];]
+$if[$getVar[$getQuery[userid]-wed16]!=none;
+$drawText[$getVar[$getQuery[userid]-wed16];302;800;82;70];]
+$if[$getVar[$getQuery[userid]-wed17]!=none;
+$drawText[$getVar[$getQuery[userid]-wed17];302;860;82;70];]
+$if[$getVar[$getQuery[userid]-wed18]!=none;
+$drawText[$getVar[$getQuery[userid]-wed18];302;920;82;7];]
+$if[$getVar[$getQuery[userid]-wed19]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed19];302;975;82;70];]
+  $if[$getVar[$getQuery[userid]-wed20]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed20];302;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-wed21]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed21];302;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-wed22]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed22];302;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-wed23]!=none;
+  $drawText[$getVar[$getQuery[userid]-wed23];302;1210;82;70];]
+$if[$getVar[$getQuery[userid]-thurs00]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs00];386;45;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs01]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs01];386;75;82;70];]
+$if[$getVar[$getQuery[userid]-thurs02]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs02];386;105;82;70];]
+$if[$getVar[$getQuery[userid]-thurs03]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs03];386;135;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs04]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs04];386;165;82;70];]
+$if[$getVar[$getQuery[userid]-thurs05]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs05];386;195;82;70];]
+$if[$getVar[$getQuery[userid]-thurs06]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs06];386;225;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs07]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs07];386;280;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs08]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs08];386;335;82;70];]
+$if[$getVar[$getQuery[userid]-thurs09]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs09];386;390;82;70];]
+$if[$getVar[$getQuery[userid]-thurs10]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs10];386;450;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs11]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs11];386;510;82;70];]
+$if[$getVar[$getQuery[userid]-thurs12]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs12];386;570;82;70];]
+$if[$getVar[$getQuery[userid]-thurs13]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs13];386;630;82;70];]
+$if[$getVar[$getQuery[userid]-thurs14]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs14];386;690;82;70];]
+$if[$getVar[$getQuery[userid]-thurs15]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs15];386;745;82;70];]
+$if[$getVar[$getQuery[userid]-thurs16]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs16];386;800;82;70];]
+$if[$getVar[$getQuery[userid]-thurs17]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs17];386;860;82;70];]
+$if[$getVar[$getQuery[userid]-thurs18]!=none;
+$drawText[$getVar[$getQuery[userid]-thurs18];386;920;82;7];]
+$if[$getVar[$getQuery[userid]-thurs19]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs19];386;975;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs20]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs20];386;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs21]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs21];386;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs22]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs22];386;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-thurs23]!=none;
+  $drawText[$getVar[$getQuery[userid]-thurs23];386;1210;82;70];]
+$if[$getVar[$getQuery[userid]-fri00]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri00];471;45;82;70];]
+  $if[$getVar[$getQuery[userid]-fri01]!=none;
+$drawText[$getVar[$getQuery[userid]-fri01];471;75;82;70];]
+$if[$getVar[$getQuery[userid]-fri02]!=none;
+$drawText[$getVar[$getQuery[userid]-fri02];471;105;82;70];]
+$if[$getVar[$getQuery[userid]-fri03]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri03];471;135;82;70];]
+  $if[$getVar[$getQuery[userid]-fri04]!=none;
+$drawText[$getVar[$getQuery[userid]-fri04];471;165;82;70];]
+$if[$getVar[$getQuery[userid]-fri05]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri05];471;195;82;70];]
+$if[$getVar[$getQuery[userid]-fri06]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri06];471;225;82;70];]
+  $if[$getVar[$getQuery[userid]-fri07]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri07];471;280;82;70];]
+  $if[$getVar[$getQuery[userid]-fri08]!=none;
+$drawText[$getVar[$getQuery[userid]-fri08];471;335;82;70];]
+$if[$getVar[$getQuery[userid]-fri09]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri09];471;390;82;70];]
+$if[$getVar[$getQuery[userid]-fri10]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri10];471;450;82;70];]
+  $if[$getVar[$getQuery[userid]-fri11]!=none;
+$drawText[$getVar[$getQuery[userid]-fri11];471;510;82;70];]
+$if[$getVar[$getQuery[userid]-fri12]!=none;
+$drawText[$getVar[$getQuery[userid]-fri12];471;570;82;70];]
+$if[$getVar[$getQuery[userid]-fri13]!=none;
+$drawText[$getVar[$getQuery[userid]-fri13];471;630;82;70];]
+$if[$getVar[$getQuery[userid]-fri14]!=none;
+$drawText[$getVar[$getQuery[userid]-fri14];471;690;82;70];]
+$if[$getVar[$getQuery[userid]-fri15]!=none;
+$drawText[$getVar[$getQuery[userid]-fri15];471;745;82;70];]
+$if[$getVar[$getQuery[userid]-fri16]!=none;
+$drawText[$getVar[$getQuery[userid]-fri16];471;800;82;70];]
+$if[$getVar[$getQuery[userid]-fri17]!=none;
+$drawText[$getVar[$getQuery[userid]-fri17];471;860;82;70];]
+$if[$getVar[$getQuery[userid]-fri18]!=none;
+$drawText[$getVar[$getQuery[userid]-fri18];471;920;82;7];]
+$if[$getVar[$getQuery[userid]-fri19]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri19];471;975;82;70];]
+  $if[$getVar[$getQuery[userid]-fri20]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri20];471;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-fri21]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri21];471;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-fri22]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri22];471;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-fri23]!=none;
+  $drawText[$getVar[$getQuery[userid]-fri23];471;1210;82;70];]
+
+$if[$getVar[$getQuery[userid]-sat00]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat00];555;45;82;70];]
+  $if[$getVar[$getQuery[userid]-sat01]!=none;
+$drawText[$getVar[$getQuery[userid]-sat01];555;75;82;70];]
+$if[$getVar[$getQuery[userid]-sat02]!=none;
+$drawText[$getVar[$getQuery[userid]-sat02];555;105;82;70];]
+$if[$getVar[$getQuery[userid]-sat03]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat03];555;135;82;70];]
+  $if[$getVar[$getQuery[userid]-sat04]!=none;
+$drawText[$getVar[$getQuery[userid]-sat04];555;165;82;70];]
+$if[$getVar[$getQuery[userid]-sat05]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat05];555;195;82;70];]
+$if[$getVar[$getQuery[userid]-sat06]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat06];555;225;82;70];]
+  $if[$getVar[$getQuery[userid]-sat07]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat07];555;280;82;70];]
+  $if[$getVar[$getQuery[userid]-sat08]!=none;
+$drawText[$getVar[$getQuery[userid]-sat08];555;335;82;70];]
+$if[$getVar[$getQuery[userid]-sat09]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat09];555;390;82;70];]
+$if[$getVar[$getQuery[userid]-sat10]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat10];555;450;82;70];]
+  $if[$getVar[$getQuery[userid]-sat11]!=none;
+$drawText[$getVar[$getQuery[userid]-sat11];555;510;82;70];]
+$if[$getVar[$getQuery[userid]-sat12]!=none;
+$drawText[$getVar[$getQuery[userid]-sat12];555;570;82;70];]
+$if[$getVar[$getQuery[userid]-sat13]!=none;
+$drawText[$getVar[$getQuery[userid]-sat13];555;630;82;70];]
+$if[$getVar[$getQuery[userid]-sat14]!=none;
+$drawText[$getVar[$getQuery[userid]-sat14];555;690;82;70];]
+$if[$getVar[$getQuery[userid]-sat15]!=none;
+$drawText[$getVar[$getQuery[userid]-sat15];555;745;82;70];]
+$if[$getVar[$getQuery[userid]-sat16]!=none;
+$drawText[$getVar[$getQuery[userid]-sat16];555;800;82;70];]
+$if[$getVar[$getQuery[userid]-sat17]!=none;
+$drawText[$getVar[$getQuery[userid]-sat17];555;860;82;70];]
+$if[$getVar[$getQuery[userid]-sat18]!=none;
+$drawText[$getVar[$getQuery[userid]-sat18];555;920;82;7];]
+$if[$getVar[$getQuery[userid]-sat19]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat19];555;975;82;70];]
+  $if[$getVar[$getQuery[userid]-sat20]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat20];555;1035;82;70];]
+  $if[$getVar[$getQuery[userid]-sat21]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat21];555;1095;82;70];]
+  $if[$getVar[$getQuery[userid]-sat22]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat22];555;1150;82;70];]
+  $if[$getVar[$getQuery[userid]-sat23]!=none;
+  $drawText[$getVar[$getQuery[userid]-sat23];555;1210;82;70];]
+
+
+  $send[200;canvas;$default]
+  `
+}
