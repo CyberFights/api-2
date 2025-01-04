@@ -1,0 +1,1 @@
+@lowerspan style@equal"color@colonblue@semi"@higherShadow@lower/span@higher@colon€Your dead€@lowerspan style@equal"color@colonred@semi"@higherReo@lower/span@higher@colon€Never!
