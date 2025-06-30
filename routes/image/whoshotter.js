@@ -1,38 +1,8 @@
 module.exports = {
-  path: '/image/vs',
+  path: '/image/whoshotter',
   code: `
   $registerFont[./assets/fonts/VtksDura3D-P12r.ttf;dura]
-
-  $createCanvas[750;350]
-  $loadImage[base;path;./assets/images/vs/vs1.png]
-  $drawImage[base;0;0;750;350]
-  $loadImage[avatar1;link;$getQuery[avatar1]]
-  $drawImage[avatar1;5;50;300;300]
-  $loadImage[avatar2;link;$getQuery[avatar2]]
-  $drawImage[avatar2;450;50;300;300]
-  $addEffect[blur;0]
-  $loadImage[top;path;./assets/images/vs/vs1top.png]
-  $drawImage[top;0;0;750;350]
-  $font[30;dura]
-  $color[#ffffff]
-  $drawText[$getQuery[name1];40;10;500;100]
-  $drawText[$getQuery[name2];440;10;500;100]
- 
-  $createCanvas[750;350]
-  $loadImage[base;path;./assets/images/vs/vs2.png]
-  $drawImage[base;0;0;750;350]
-  $loadImage[avatar1;link;$getQuery[avatar1]]
-  $drawImage[avatar1;40;50;250;250]
-  $loadImage[avatar2;link;$getQuery[avatar2]]
-  $drawImage[avatar2;430;50;250;250]
-  $addEffect[blur;0]
-  $loadImage[top;path;./assets/images/vs/vs2top.png]
-  $drawImage[top;0;0;750;350]
-  $font[30;dura]
-  $color[#ffffff]
-  $drawText[$getQuery[name1];80;300;500;100]
-  $drawText[$getQuery[name2];400;300;500;100]
-
+  
   $createCanvas[750;350]
   $loadImage[base;path;./assets/images/vs/vs3.png]
   $drawImage[base;0;0;750;350]
@@ -47,7 +17,9 @@ module.exports = {
   $color[#000000]
   $drawText[$getQuery[name1];50;230;400;300]
   $drawText[$getQuery[name2];485;230;400;300]
-
+  $drawText[Votes: $getQuery[vote1];50;270;400;300]
+  $drawText[Votes: $getQuery[vote2];485;270;400;300]
+  
   $send[200;canvas;$default]
   `
 }
