@@ -17,8 +17,9 @@ module.exports = {
   $color[#000000]
   $drawText[$getQuery[name1];50;230;400;300]
   $drawText[$getQuery[name2];485;230;400;300]
-  $drawText[Votes: $getQuery[vote1];50;270;400;300]
-  $drawText[Votes: $getQuery[vote2];485;270;400;300]
+    $color[#fff]
+  $drawText[Votes: $getQuery[vote1];50;300;400;300]
+  $drawText[Votes: $getQuery[vote2];485;300;400;300]
   
   $send[200;canvas;$default]
   `
