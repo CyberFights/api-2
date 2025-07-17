@@ -1,7 +1,7 @@
 module.exports = {
   path: '/data/discord/guildinfo',
   code: `
-  $request[https://discord.com/api/v10/guilds/$getQuery[guildid];;Accept: application/json;Authorization: Bot $env[token;true]]
+  $request[https://discord.com/api/v10/guilds/$getQuery[guildid];;Accept: application/json;Authorization: Bot $env[BotToken;true]]
   
   $send[200;json;{
   "Guild": {
