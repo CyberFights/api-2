@@ -7,7 +7,7 @@ module.exports = {
   $drawRect[0;0;400;200;100]
   $if[$getQuery[color-to]==undefined;
   $color[#00ff00]
-  $drawRect[0;0;$math[($getQuery[xp]/$getQuery[req])*400];200;100];$loadImage[bar;link;https://shadows-api.shadowsnemesis.repl.co/image/multigradient?color-to=$getQuery[color-to]&color-from=$getQuery[color-from]]
+  $drawRect[0;0;$math[($getQuery[xp]/$getQuery[req])*400];200;100];$loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient?color-to=$getQuery[color-to]&color-from=$getQuery[color-from]]
   $drawImage[bar;0;0;$math[($getQuery[xp]/$getQuery[req])*400];200;100]]
   
   $color[#ffffff]
