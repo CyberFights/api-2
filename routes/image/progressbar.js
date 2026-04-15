@@ -11,8 +11,8 @@ module.exports = {
   $drawImage[bar;0;0;$math[($getQuery[xp]/$getQuery[req])*400];100;50]]
   
   $color[#00ff00]
-  $font[15;Arial;bold]
-  $drawText[$getQuery[type]: $getQuery[xp]/$getQuery[req];10;10;300;200]
+  $font[25;Arial;bold]
+  $drawText[$getQuery[type]: $getQuery[xp]/$getQuery[req];50;20;200;200]
   $send[200;canvas;$default]
   `
 }
