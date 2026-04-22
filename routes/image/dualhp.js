@@ -13,7 +13,7 @@ module.exports = {
   $if[$getQuery[xp2]!=undefined;
   $color[#000000]
   $drawRect[0;100;400;100;50]
-  $loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient++.?color-to=$getQuery[color-to2]&color-from=$getQuery[color-from2]]
+  $loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient?color-to=$getQuery[color-to2]&color-from=$getQuery[color-from2]]
   $drawImage[bar;0;100;$math[($getQuery[xp2]/$getQuery[req2])*400];100;50];]    $if[$getQuery[xp3]!=undefined;
   $color[#000000]'
   $drawRect[0;200;400;100;50]
