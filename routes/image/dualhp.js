@@ -15,7 +15,7 @@ module.exports = {
   $drawRect[0;100;400;100;50]
   $loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient?color-to=$getQuery[color-to2]&color-from=$getQuery[color-from2]]
   $drawImage[bar;0;100;$math[($getQuery[xp2]/$getQuery[req2])*400];100;50];]    $if[$getQuery[xp3]!=undefined;
-  $color[#000000]'
+  $color[#000000]
   $drawRect[0;200;400;100;50]
   $loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient?color-to=$getQuery[color-to3]&color-from=$getQuery[color-from3]]
   $drawImage[bar;0;200;$math[($getQuery[xp3]/$getQuery[req3])*400];100;50];]
@@ -39,9 +39,14 @@ module.exports = {
   $loadImage[bar;link;https://api-1-production-1161.up.railway.app/image/multigradient?color-to=$getQuery[color-to6]&color-from=$getQuery[color-from6]]
   $drawImage[bar;450;200;$math[($getQuery[xp6]/$getQuery[req6])*400];100;50];]
   
-  $color[#00ff00]
-  $font[25;dura]
-  $drawText[$getQuery[type]: $getQuery[xp]/$getQuery[req];20;20;300;50]
+  $color[#ffffff]
+  $font[30;dura]
+  $drawText[ $getQuery[xp]/$getQuery[req];20;20;300;50]
+  $drawText[ $getQuery[xp2]/$getQuery[req2];20;120;300;50]
+   $drawText[ $getQuery[xp3]/$getQuery[req3];20;220;300;50]
+     $drawText[ $getQuery[xp4]/$getQuery[req4];150;20;300;50]
+  $drawText[ $getQuery[xp5]/$getQuery[req5];150;120;300;50]
+   $drawText[ $getQuery[xp6]/$getQuery[req6];150;220;300;50]
   $send[200;canvas;$default]
   `
 }
