@@ -41,12 +41,12 @@ module.exports = {
   
   $color[#ffffff]
   $font[30;dura]
-  $drawText[ $getQuery[xp]/$getQuery[req];120;20;300;50]
-  $drawText[ $getQuery[xp2]/$getQuery[req2];120;120;300;50]
-   $drawText[ $getQuery[xp3]/$getQuery[req3];120;220;300;50]
-     $drawText[ $getQuery[xp4]/$getQuery[req4];450;20;300;50]
-  $drawText[ $getQuery[xp5]/$getQuery[req5];450;120;300;50]
-   $drawText[ $getQuery[xp6]/$getQuery[req6];450;220;300;50]
+  $drawText[ $getQuery[xp]/$getQuery[req];180;20;300;50]
+  $drawText[ $getQuery[xp2]/$getQuery[req2];180;120;300;50]
+   $drawText[ $getQuery[xp3]/$getQuery[req3];180;220;300;50]
+     $drawText[ $getQuery[xp4]/$getQuery[req4];650;20;300;50]
+  $drawText[ $getQuery[xp5]/$getQuery[req5];650;120;300;50]
+   $drawText[ $getQuery[xp6]/$getQuery[req6];650;220;300;50]
   $send[200;canvas;$default]
   `
 }
